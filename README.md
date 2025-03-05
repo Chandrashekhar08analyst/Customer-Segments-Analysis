@@ -77,7 +77,8 @@ Performed **Recency, Frequency, and Monetary (RFM) Analysis** to categorize cust
   - **Customer Spending Patterns**  
   - **Monthly Sales Trends**  
 
-"C:\Users\CHANDRASHEKHAR\OneDrive\Pictures\Screenshots\Screenshot 2025-03-05 084908.png"
+
+![Screenshot 2025-03-05 084908](https://github.com/user-attachments/assets/34e29067-4ce6-498a-b255-125169aaaee1)
 
 
 ## Business Recommendations  
