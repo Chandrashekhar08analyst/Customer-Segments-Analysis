@@ -1,4 +1,4 @@
-# Customer Segmentation and Sales Analysis  
+# 👤 Customer Segmentation and Sales Analysis  
 
 ## Project Overview  
 This project analyzes customer data to derive actionable insights that improve sales and customer retention. The analysis includes customer segmentation based on demographics, behavior, and geography, along with identifying churned customers, big spenders, and frequent shoppers.  
