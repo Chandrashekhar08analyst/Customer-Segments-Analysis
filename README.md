@@ -1,101 +1,251 @@
-# 👤 Customer Segmentation and Sales Analysis  
+# **👤 Customer Segmentation & Sales Analytics**
 
-## Project Overview  
-This project analyzes customer data to derive actionable insights that improve sales and customer retention. The analysis includes customer segmentation based on demographics, behavior, and geography, along with identifying churned customers, big spenders, and frequent shoppers.  
+![Customer Segmentation & Sales Analytics](https://github.com/user-attachments/assets/34e29067-4ce6-498a-b255-125169aaaee1)
 
-### Tools Used  
-- **SQL** (for data extraction, transformation, and analysis)  
-- **Excel** (for visualization, interactive dashboards, and deeper insights using Power Pivot & Pivot Tables)  
+## Introduction
 
-## Analysis Performed  
+The **Customer Segmentation & Sales Analytics** project analyzes customer and transaction data to understand **customer behavior, purchasing patterns, sales performance, churn, and customer value**.
 
-### 1. Demographics Segmentation  
-- **Gender-Based Analysis**  
-  - **Insight:** Female customers purchase more products compared to males.  
-- **Age Group Analysis**  
-  - **Insight:** Customers aged 45+ are frequent purchasers.  
+The project combines **SQL for data extraction and advanced customer analytics** with **Excel Power Pivot and Pivot Tables for interactive reporting and dashboard development**.
 
-### 2. Behavioral Segmentation (RFM Analysis)  
-Performed **Recency, Frequency, and Monetary (RFM) Analysis** to categorize customers based on:  
-- **Recency:** How recently a customer made a purchase.  
-- **Frequency:** How often a customer purchases.  
-- **Monetary Value:** The total amount spent by a customer.  
+The analysis focuses on identifying high-value customers, churned customers, purchasing behavior, top-performing locations and products, and key sales trends to support **customer retention and revenue growth**.
 
-#### Top 5 Customers (Based on RFM Score)  
-| Customer Name  | Customer ID  | Recency  | Frequency  | Monetary Value (₹) |  
-|---------------|-------------|---------|-----------|-----------------|  
-| Mira Sharma  | CUST3412    | 1284    | 5         | 1873.47         |  
-| Ishaan Yadav  | CUST3332    | 1173    | 5         | 1775.12         |  
-| Aanya Joshi  | CUST4045    | 1204    | 4         | 1719.71         |  
-| Kabir Joshi  | CUST1071    | 1185    | 5         | 1709.12         |  
-| Kabir Singh  | CUST0648    | 1204    | 4         | 1665.11         |  
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
 
-### 3. Geographic Segmentation  
-- **Top Performing Locations:**  
-  - **Vasant Kunj, Lajpat Nagar, and Saket** generated the highest sales.  
+## Business Questions
 
-### 4. Churned Customers  
-- Identified customers who haven’t purchased in the last **6 months**.  
-- **Insight:** Certain regions have higher churn rates.  
+The analysis focuses on the following key questions:
 
-### 5. Customer Spending Patterns  
-- **Occasional Big Spenders:** Customers who make large purchases infrequently.  
-- **Frequent Low Spenders:** Customers who make smaller purchases frequently.  
-- **Insight:** Frequent low spenders contribute to steady revenue, while big spenders buy high-value items less often.  
+1. Which customer segments contribute the most to revenue?
+2. Which demographic groups purchase most frequently?
+3. Who are the highest-value customers?
+4. Which customers are at risk of churn?
+5. Which locations generate the highest sales?
+6. Which product categories contribute the most revenue?
+7. What are the monthly sales and order trends?
+8. Who are the frequent shoppers and occasional high-value spenders?
+9. Which customers have the highest Customer Lifetime Value (CLV)?
+10. How can customer behavior be leveraged to improve retention and sales?
 
-### 6. Customer Lifetime Value (CLV)  
-- Estimated the long-term revenue potential of customers.  
-- **Insight:** High CLV customers make consistent purchases and contribute significantly to revenue.  
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
 
-### 7. Top 10 Customers  
-- Identified top spenders based on total sales.  
+## Technology Used
 
-### 8. Top 5 Product Categories  
-- Analyzed highest-selling product categories.  
+* **SQL**
 
-### 9. Sales vs Orders (Monthly Trends)  
-- Identified peak sales periods and seasonal trends.  
+  * SQL is used for data extraction, transformation, customer segmentation, and analytical modeling.
+  * **Joins:** Combining customer and transaction data.
+  * **Window Functions:** Ranking, sequencing, and customer-level analysis.
+  * **Subqueries:** Complex analytical logic and segmentation.
+  * **RFM Analysis:** Customer segmentation based on Recency, Frequency, and Monetary value.
+  * **Aggregations:** Customer, product, location, sales, and order-level analysis.
 
-### 10. First-Time Buyers  
-- Identified customers making their first purchase.  
+* **Microsoft Excel**
 
-## Implementation in SQL & Excel  
+  * Excel is used for data modeling, analysis, visualization, and interactive dashboard development.
+  * **Power Pivot:** Data modeling and table relationships.
+  * **Pivot Tables:** Customer, sales, product, and geographic analysis.
+  * **KPIs:** Revenue, customers, orders, and customer-value metrics.
+  * **Slicers:** Interactive filtering and dashboard exploration.
 
-### SQL Approach  
-- Used SQL queries for **data extraction, transformation, and customer segmentation.**  
-- Applied **joins, window functions, subqueries, and RFM analysis** to derive insights.  
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
 
-### Excel Approach  
-- Imported data into **Excel Power Pivot** and created **relationships between Customer & Purchase tables.**  
-- Used **Pivot Tables** to summarize key metrics.  
-- Created **KPIs using Power Pivot** for deeper insights.  
-- Designed an **interactive dashboard** with slicers for:  
-  - **Total Customers by Gender & Age Group**  
-  - **Total Amount Spent by Gender & Age Group**  
-  - **Total Customers & Revenue by Product Category**  
-  - **Total Sales by Location**  
-  - **Customer Spending Patterns**  
-  - **Monthly Sales Trends**  
+## Customer Segmentation
 
+Customer segmentation was performed across multiple dimensions to understand different customer groups and their contribution to the business.
 
-![Screenshot 2025-03-05 084908](https://github.com/user-attachments/assets/34e29067-4ce6-498a-b255-125169aaaee1)
+### Demographic Segmentation
 
+Customer behavior was analyzed across:
 
-## Business Recommendations  
+* Gender
+* Age Groups
+* Customer purchasing frequency
+* Customer spending
 
-1. **Target Female Customers & Seniors**  
-   - Offer personalized promotions and loyalty programs.  
-2. **Leverage Top Locations**  
-   - Run location-based marketing campaigns in **Vasant Kunj, Lajpat Nagar, and Saket**.  
-3. **Win Back Churned Customers**  
-   - Provide re-engagement discounts to inactive customers.  
-4. **Encourage Occasional Big Spenders**  
-   - Offer personalized recommendations for high-value purchases.  
-5. **Retain High CLV Customers**  
-   - Provide VIP perks, exclusive deals, and early product access.  
-6. **Optimize Product Promotions**  
-   - Prioritize best-selling categories and seasonal trends.  
+### RFM Analysis
 
-## Conclusion  
-This analysis helps businesses improve **customer retention, increase sales, and enhance customer engagement** through **data-driven strategies.**  
-By leveraging **SQL for in-depth analysis** and **Excel for visualization and interactive dashboards,** businesses can make **data-backed decisions for growth.**  
+**RFM Analysis** was used to evaluate customer value based on three dimensions:
+
+* **Recency:** How recently a customer purchased.
+* **Frequency:** How frequently a customer purchases.
+* **Monetary:** How much a customer spends.
+
+RFM scoring was used to identify high-value and highly engaged customers.
+
+### Customer Spending Patterns
+
+Customers were segmented into behavioral groups such as:
+
+* Frequent Low Spenders
+* Occasional Big Spenders
+* High-Value Customers
+* Low-Engagement Customers
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Customer Analytics
+
+### Customer Lifetime Value
+
+**Customer Lifetime Value (CLV)** was analyzed to identify customers with strong long-term revenue potential.
+
+High-CLV customers were identified based on their purchase consistency and monetary contribution.
+
+### Churn Analysis
+
+Customers with **no purchase activity during the previous six months** were identified as potentially churned customers.
+
+The analysis also examined geographic differences in customer churn.
+
+### Top Customers
+
+Customer-level analysis was used to identify:
+
+* Top customers by total spending
+* High-RFM customers
+* High-CLV customers
+* Frequent shoppers
+* Occasional high-value customers
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Sales Analysis
+
+The sales analysis covered multiple business dimensions.
+
+### Geographic Performance
+
+Sales were analyzed across locations to identify high-performing markets.
+
+**Top-performing locations:**
+
+* Vasant Kunj
+* Lajpat Nagar
+* Saket
+
+### Product Performance
+
+Product categories were analyzed to identify the **top-performing product categories** and their contribution to overall sales.
+
+### Sales & Orders Trends
+
+Monthly sales and order trends were analyzed to identify:
+
+* Peak sales periods
+* Seasonal patterns
+* Changes in order volume
+* Revenue trends
+
+### First-Time Buyers
+
+First-time customers were identified to understand customer acquisition and new-buyer contribution to sales.
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Excel Dashboard
+
+The final analysis was developed into an interactive **Excel dashboard** using **Power Pivot, Pivot Tables, KPIs, and slicers**.
+
+### Dashboard Includes
+
+* Customer Demographics
+* Customers by Gender & Age Group
+* Revenue by Gender & Age Group
+* Customers & Revenue by Product Category
+* Sales by Location
+* Customer Spending Patterns
+* Monthly Sales Trends
+* Customer Segmentation
+* Key Sales KPIs
+
+![Customer Segmentation & Sales Dashboard](https://github.com/user-attachments/assets/34e29067-4ce6-498a-b255-125169aaaee1)
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Key Insights
+
+| Analysis Area    | Key Insight                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Demographics** | Female customers contribute higher purchase volume than male customers.                                             |
+| **Age Group**    | Customers aged 45+ show relatively strong purchasing activity.                                                      |
+| **RFM**          | RFM analysis identifies high-value and highly engaged customer segments.                                            |
+| **Geography**    | Vasant Kunj, Lajpat Nagar, and Saket are among the highest-performing locations.                                    |
+| **Churn**        | A segment of customers shows no purchase activity for six months or more, indicating potential churn risk.          |
+| **Spending**     | Frequent low spenders provide consistent revenue, while occasional big spenders generate higher-value transactions. |
+| **CLV**          | High-CLV customers demonstrate stronger long-term revenue potential.                                                |
+| **Products**     | A small number of product categories contribute significantly to overall sales.                                     |
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Business Recommendations
+
+### 1. Strengthen High-Value Customer Retention
+
+Use RFM and CLV segments to provide high-value customers with **loyalty benefits, personalized offers, and exclusive promotions**.
+
+### 2. Re-Engage Churned Customers
+
+Develop targeted win-back campaigns for customers who have remained inactive for six months or longer.
+
+### 3. Target High-Performing Locations
+
+Use location-level sales insights to prioritize marketing campaigns and promotional investments in high-performing markets.
+
+### 4. Increase Customer Value
+
+Encourage frequent low spenders to increase basket size through **cross-selling, bundles, and personalized recommendations**.
+
+### 5. Optimize Product Promotions
+
+Prioritize high-performing product categories while using seasonal sales trends to improve promotional planning.
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Project Structure
+
+```text
+Customer-Segmentation-Sales-Analytics/
+│
+├── Dataset/
+│   ├── Customers.csv
+│   └── Purchases.csv
+│
+├── SQL/
+│   └── Customer_Analytics.sql
+│
+├── Excel/
+│   └── Customer_Sales_Dashboard.xlsx
+│
+└── README.md
+```
+
+<p align="left">
+  <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0184.gif" width="100%">
+</p>
+
+## Conclusion
+
+The **Customer Segmentation & Sales Analytics** project demonstrates how SQL and Excel can be combined to turn customer and transaction data into actionable business intelligence.
+
+Through **RFM segmentation, CLV analysis, churn identification, demographic analysis, geographic analysis, product performance, and sales trends**, the project provides a comprehensive view of **customer value and business performance**.
+
+The resulting insights can support **customer retention, targeted marketing, product strategy, and revenue growth**.
