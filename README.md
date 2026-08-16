@@ -1,4 +1,4 @@
-# **👤 Customer Segmentation & Sales Analytics**
+# **👤 Customer Segmentation & Sales Analytics** 
 
 ![Customer Segmentation & Sales Analytics](https://github.com/user-attachments/assets/34e29067-4ce6-498a-b255-125169aaaee1)
 
